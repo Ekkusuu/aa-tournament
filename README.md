@@ -4,7 +4,6 @@
 The **Mastermind** strategy is a dynamic algorithm for the **Iterated Prisoner's Dilemma** (IPD). It adapts to the opponent's behavior using various techniques, including **Tit for Tat** detection, **Random detection**, **Grudge mode**, and **Cooperation rate checks**. The strategy aims to cooperate initially but will defect in response to exploitation by the opponent.
 
 ## Key Features
-- **Dynamic Opening**: The strategy starts without a fixed opening but dynamically adjusts based on the opponent's behavior and cooperation patterns.
 - **Tit for Tat Detection**: Detects if the opponent follows a **Tit for Tat** strategy (mirroring the player's previous moves). If detected, the player will cooperate.
 - **Random Strategy Detection**: Identifies if the opponent uses a **random strategy** based on the proportion of cooperations. If detected, the player will defect.
 - **Grudge Mode**: If the opponent defects 6 times in a row while the player cooperated at least twice, **Grudge mode** is triggered, causing the player to permanently defect.
