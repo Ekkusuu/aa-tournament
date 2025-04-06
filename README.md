@@ -1,7 +1,7 @@
-# Mastermind Strategy Algorithm for Iterated Prisoner's Dilemma
+# Mahoraga Strategy Algorithm for Iterated Prisoner's Dilemma
 
 ## Overview
-The **Mastermind** strategy is a dynamic algorithm for the **Iterated Prisoner's Dilemma** (IPD). It adapts to the opponent's behavior using various techniques, including **Tit for Tat** detection, **Random detection**, **Grudge mode**, and **Cooperation rate checks**. The strategy aims to cooperate initially but will defect in response to exploitation by the opponent.
+The **Mahoraga** strategy is a dynamic algorithm for the **Iterated Prisoner's Dilemma** (IPD). It adapts to the opponent's behavior using various techniques, including **Tit for Tat** detection, **Random detection**, **Grudge mode**, and **Cooperation rate checks**. The strategy aims to cooperate initially but will defect in response to exploitation by the opponent.
 
 ## Key Features
 - **Tit for Tat Detection**: Detects if the opponent follows a **Tit for Tat** strategy (mirroring the player's previous moves). If detected, the player will cooperate.
@@ -28,4 +28,4 @@ The **Mastermind** strategy is a dynamic algorithm for the **Iterated Prisoner's
     - If both the player and opponent cooperated or defected in the previous round, the player repeats the previous action. If there was a mismatch (cooperate vs defect), the player switches to defect.
 
 ## Conclusion
-The **Mastermind** strategy combines adaptive mechanisms such as **Tit for Tat**, **Grudge mode**, and **Pavlov** to effectively handle the Iterated Prisoner's Dilemma. It aims to cooperate when possible but will switch to defection if the opponent exploits cooperation, ensuring a balanced approach to the game.
+The **Mahoraga** strategy combines adaptive mechanisms such as **Tit for Tat**, **Grudge mode**, and **Pavlov** to effectively handle the Iterated Prisoner's Dilemma. It aims to cooperate when possible but will switch to defection if the opponent exploits cooperation, ensuring a balanced approach to the game.
