@@ -34,18 +34,22 @@ def strategy(my_history: list[int], opponent_history: list[int], rounds: int | N
         return 0
 
     def check_coop_rate(my_history, opponent_history):
-        count = 0
+        count_aux = 0
+        count=0
         
-        for i in range(len(my_history) - 2):
+        for i in range(min(len(my_history),25) - 2):
             my_subarray = my_history[i:i+3]
             opp_subarray = opponent_history[i:i+3]
             
             coop_rate = my_subarray.count(1) / len(my_subarray)
             
-            if coop_rate > 0.8 and opp_subarray[-1] == 0:
-                count += 1 
+            if coop_rate > 0.8 and opp_subarray[-1] == 0 and opp_subarray[-2]:
+                count_aux += 1 
                 
-                if count >= 5:
+                if count_aux >= 2:
+                    count+=1
+                    count_aux=0
+                if count >= 2:
                     return True
                     
         return False

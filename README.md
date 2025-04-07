@@ -16,7 +16,7 @@ The **Mahoraga** strategy is a dynamic algorithm for the **Iterated Prisoner's D
     - If the opponent mirrors the player’s previous moves, the player will cooperate.
 
 2. **Random Strategy Detection**: 
-    - If the opponent’s moves appear random (based on the proportion of cooperations), the player will defect.
+    - If the opponent’s moves appear random, the player will defect.
 
 3. **Grudge Mode**: 
     - If the opponent defects 6 times consecutively, and the player cooperated at least twice during that period, the strategy switches to permanent defection (Grudge mode).
